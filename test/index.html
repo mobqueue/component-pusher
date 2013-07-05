@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="../build/build.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var Pusher = require('component-pusher');
+
+      var pusher = new Pusher('PUSHER_KEY');
+      var channel = pusher.subscribe('test_channel');
+      channel.bind('my_event', function(data) {
+        alert(data.message);
+      });
+    </script>
+  </body>
+</html>
