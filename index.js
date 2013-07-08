@@ -4,7 +4,7 @@
  */
 
 var Pusher = require('./pusher')
-  , XHR = require('component-xhr');
+  , XHR = require('xhr');
 
 /**
  * Connect to Pusher
