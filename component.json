@@ -1,5 +1,5 @@
 {
-  "name": "component-pusher",
+  "name": "pusher",
   "repo": "mobqueue/component-pusher",
   "description": "Pusher wrapper for component(1)",
   "version": "0.0.1",
