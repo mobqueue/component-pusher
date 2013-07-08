@@ -4,9 +4,8 @@
   </head>
   <body>
     <script type="text/javascript">
-      var Pusher = require('component-pusher');
-
-      var pusher = new Pusher('PUSHER_KEY');
+      window.PUSHER_KEY = 'PUSHER_KEY';
+      var pusher = require('component-pusher');
       var channel = pusher.subscribe('test_channel');
       channel.bind('my_event', function(data) {
         alert(data.message);
