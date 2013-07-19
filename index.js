@@ -28,18 +28,8 @@ module.exports = pusher;
  * Listen to PhoneGap events
  */
 
-document.addEventListener('pause', disconnect, false);
 document.addEventListener('resume', reconnect, false);
-document.addEventListener('offline', disconnect, false);
 document.addEventListener('online', reconnect, false);
-
-/**
- * Disconnect
- */
-
-function disconnect() {
-  pusher.disconnect();
-}
 
 /**
  * Reconnect
